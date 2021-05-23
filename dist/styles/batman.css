@@ -1,0 +1,8 @@
+body {
+  background: url('../assets/batman_bg.jpg') rgba(0, 0, 0, 0.55) no-repeat;
+  background-size: cover;
+}
+
+.active-theme {
+  box-shadow: 0px 2px 1.5rem 0 gold;
+}

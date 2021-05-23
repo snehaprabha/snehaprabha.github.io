@@ -1,34 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="./index.js" defer></script>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneha Prabha</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>Sneha Prabha | Front-end Developer</title>
+    <link rel="stylesheet" href="./styles/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,100&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="card">
-        <div class="card-image">
-            <img src="pick.jpg" alt="">
-        </div>
-        <div class="profile-image">
-            <img src="prabha.JPG" alt="">
-        </div>
-        <div class="card-content">
-            <h3>Hi There, I am Sneha.<br>Welcome to my git hub <br>page.</h3>
-            <p>I am front-end developer and have experience in working on javascript and library like React.js </p>
-        </div>
-        <div class="icons">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="https://github.com/snehaprabha" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-            <a href="https://github.com/snehaprabha" class="fab fa-github"></a>
-            <a href="#" class="fab fa-instagram"></a>
-        </div>
+    <div class="main-container">
+        <header>
+            <div>
+                <img alt="theme-menu" src="assets/superhero-svgrepo-com.svg" id="hamburger-icon" />
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    id="hamburger-icon" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="feather feather-align-justify">
+                    <line x1="21" y1="10" x2="3" y2="10"></line>
+                    <line x1="21" y1="6" x2="3" y2="6"></line>
+                    <line x1="21" y1="14" x2="3" y2="14"></line>
+                    <line x1="21" y1="18" x2="3" y2="18"></line>
+                </svg> -->
+            </div>
+            <div id="hamburger-menu">
+                <div data-superhero="batman"></div>
+                <div data-superhero="superman"></div>
+                <div data-superhero="spiderman"></div>
+                <div data-superhero="captainamerica"></div>
+            </div>
+        </header>
+        <section>
+            <img src="./assets/prabha.JPG" alt="profile" />
+            <div class="content" id="about">
+                <h1>
+                    Hi There, I am Sneha Prabha.
+                    <br />Welcome to my Github page.
+                </h1>
+                <h3>
+                    I am a front-end developer having experience with developing responsive web applications using HTML,
+                    CSS, JavaScript and libaries/frameworks like React.js.
+                </h3>
+                <h6>
+                    I am actively looking for opportunities.
+                    <br /> Here's how you can reach me
+                </h6>
+            </div>
+            <div id="contact">
+                <div class="icons">
+                    <a href="mailto:snehaprabha183.m@gmail.com" title="Email: snehaprabha183.m@gmail.com" target="_blank"
+                        rel="noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-mail">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/snehaprabhamanapuram/" target="_blank" rel="noreferrer"
+                        title="Linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/snehaprabha" target="_blank" rel="noreferrer" title="Github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-github">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="built-using">
+                <img src="assets/stack.png" alt="Built using HTML5, CSS3 and JavaScript" />
+                <div class="credits">
+                    <div>&copy;</div>
+                    <div class="fs-7"><span>Icons:</span> <a href="https://feathericons.com/" target="_blank"
+                            rel="noreferrer">Feather Icons</a></div>
+                    <div class="fs-7"><span>Images:</span> <a href="https://unsplash.com/" target="_blank"
+                            rel="noreferrer">Unsplash</a></div>
+                    <div class="fs-7"><span>Font:</span><a href="https://fonts.google.com/specimen/Poppins"
+                            target="_blank" rel="noreferrer">Poppins</a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
     </div>
 </body>
 
