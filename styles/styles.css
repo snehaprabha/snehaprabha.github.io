@@ -1,0 +1,206 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box !important;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 3.16vw;
+}
+a {
+  color: inherit;
+}
+svg {
+  cursor: pointer;
+}
+body {
+  min-height: 100vh;
+  color: #fff;
+  background: url('../assets/pick.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+.main-container {
+  display: grid;
+  font-weight: 600;
+  font-size: 6rem;
+  gap: 1rem;
+  grid-gap: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+header,
+section,
+footer {
+  font-size: inherit;
+  display: flex;
+}
+header {
+  flex-direction: row-reverse;
+  margin: 1rem 2rem 0;
+}
+section {
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
+  grid-gap: 1rem;
+  margin: 0 2rem;
+  padding: 1rem 0;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+}
+section .content {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  gap: 0.7rem;
+  grid-gap: 0.7rem;
+}
+section .content h3 {
+  margin: 0 5%;
+}
+img[alt='profile'] {
+  /* width: 12rem; */
+  width: 120px;
+  height: 120px;
+  position: relative;
+  border-radius: 100px;
+}
+#contact .icons {
+  display: flex;
+  gap: 1rem;
+  grid-gap: 1rem;
+  min-height: 3rem;
+}
+.icons svg:hover {
+  height: 36px;
+  width: 36px;
+  transition: 0.3s;
+  color: gold;
+}
+footer {
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  padding: 2.5rem 1.5rem;
+}
+.built-using {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  grid-gap: 1rem;
+}
+.built-using img {
+  height: 6rem;
+}
+ul {
+  max-width: min-content;
+}
+#hamburger-icon {
+  height: 2rem;
+  cursor: pointer;
+}
+#hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  background: white;
+  z-index: 3;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  flex-flow: row wrap;
+  color: #000;
+  width: 12rem;
+  gap: 1.5rem;
+  justify-content: center;
+  border-radius: 1rem;
+}
+#hamburger-menu > div {
+  height: 60px;
+  width: 60px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#hamburger-menu [data-superhero='batman'] {
+  background: url('../assets/batman1.png') no-repeat center center;
+  background-size: cover;
+}
+#hamburger-menu [data-superhero='superman'] {
+  background: url('../assets/superman1.png') no-repeat center center;
+  background-size: cover;
+}
+#hamburger-menu [data-superhero='captainamerica'] {
+  background: url('../assets/captainamerica.png') no-repeat center center;
+  background-size: cover;
+}
+#hamburger-menu [data-superhero='spiderman'] {
+  background: url('../assets/spiderman1.png') no-repeat center center;
+  background-size: cover;
+}
+.credits {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.fs-7 {
+  display: flex;
+  gap: 0.4rem;
+}
+.fs-7,
+.fs-7 a,
+.fs-7 span {
+  font-size: 0.75rem;
+}
+.fs-7 span {
+  font-weight: 400;
+}
+.fs-7 a {
+  cursor: pointer;
+}
+.fs-7 a:hover {
+  color: gold;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+  section .content h3 {
+    margin: 0 10%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  * {
+    font-size: 1.12vw;
+  }
+  section {
+    margin: 0 12.5rem;
+  }
+  section .content h3 {
+    margin: 0 20%;
+  }
+  footer {
+    position: static;
+    margin-top: 1.5rem;
+  }
+}
